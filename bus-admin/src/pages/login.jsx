@@ -13,7 +13,6 @@ const Login = ({ onLogin }) => {
 
   return (
     <div className="login-page-container">
-      {/* Internal CSS */}
       <style>{`
         :root {
           --navy: #243447;

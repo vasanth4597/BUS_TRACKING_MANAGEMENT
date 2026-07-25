@@ -63,10 +63,8 @@ export default function Dashboard({ buses }) {
       {/* ── Two-column grid ───────────────────────── */}
       <div className="dash-grid">
 
-        {/* ══════════════ LEFT (60%) ══════════════ */}
         <div className="dash-left">
 
-          {/* KPI row */}
           <div className="kpi-row">
             <KpiCard
               variant="total"
@@ -93,7 +91,6 @@ export default function Dashboard({ buses }) {
             />
           </div>
 
-          {/* Live Fleet Map */}
           <div className="map-card">
             <div className="map-card__header">
               <div className="map-card__title">
@@ -131,7 +128,6 @@ export default function Dashboard({ buses }) {
           {isMapFullscreen && (
             <div className="map-fullscreen-overlay">
               <div className="map-fullscreen-inner" onClick={(e) => e.stopPropagation()}>
-                {/* Close button — top-right corner */}
                 <button
                   className="map-fullscreen-close"
                   onClick={() => setIsMapFullscreen(false)}
@@ -139,7 +135,6 @@ export default function Dashboard({ buses }) {
                 >
                   <X size={20} strokeWidth={2.5} />
                 </button>
-                {/* Map header strip */}
                 <div className="map-fullscreen-header">
                   <div className="map-card__title">
                     <div className="map-card__title-icon">
@@ -158,7 +153,6 @@ export default function Dashboard({ buses }) {
                     </div>
                   </div>
                 </div>
-                {/* Fullscreen map body */}
                 <div className="map-fullscreen-body">
                   <MapView buses={buses} />
                 </div>
@@ -167,14 +161,11 @@ export default function Dashboard({ buses }) {
           )}
 
         </div>
-        {/* ══════════════ END LEFT ══════════════ */}
 
-        {/* ══════════════ RIGHT (40%) — Bus List + Bus Details ══════════════ */}
         <div className="dash-right">
           <BusList buses={buses} selectedId={selectedId} onSelect={handleSelect} />
           <BusInfoCard bus={selectedBus} onTrackLocation={handleTrackLocation} />
         </div>
-        {/* ══════════════ END RIGHT ══════════════ */}
 
       </div>
 

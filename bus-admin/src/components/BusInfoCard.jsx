@@ -19,7 +19,6 @@ export default function BusInfoCard({ bus, onTrackLocation }) {
 
   return (
     <div className="bus-info-card">
-      {/* Card header */}
       <div className="bus-info-card__header">
         <div className="bus-info-card__title">
           <div className="bus-info-card__title-icon">
@@ -32,7 +31,6 @@ export default function BusInfoCard({ bus, onTrackLocation }) {
         )}
       </div>
 
-      {/* Card body */}
       <div className="bus-info-card__body">
         {bus ? (
           <>

@@ -120,7 +120,6 @@ function BusInfoPanel({ bus, label, onClose }) {
         animation: 'busInfoFadeIn 0.18s ease',
       }}
     >
-      {/* Header row */}
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
           <div style={{
@@ -136,7 +135,6 @@ function BusInfoPanel({ bus, label, onClose }) {
             <div style={{ fontSize: '10px', color: '#718096', marginTop: '1px' }}>{bus.route || '—'}</div>
           </div>
         </div>
-        {/* Close button */}
         <button
           onClick={onClose}
           title="Close"
@@ -154,7 +152,6 @@ function BusInfoPanel({ bus, label, onClose }) {
         </button>
       </div>
 
-      {/* Status badge */}
       <div style={{ marginBottom: '10px' }}>
         <span style={{
           display: 'inline-block',
@@ -171,7 +168,6 @@ function BusInfoPanel({ bus, label, onClose }) {
         </span>
       </div>
 
-      {/* Details grid */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6px 12px' }}>
         {[
           { label: 'Reg No', value: bus.number || bus.busNo || '—' },

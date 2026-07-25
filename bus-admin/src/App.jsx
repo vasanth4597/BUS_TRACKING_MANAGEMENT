@@ -145,7 +145,6 @@ export default function App() {
               <LogOut size={18} strokeWidth={2} />
             </button>
 
-            {/* Profile avatar */}
             <div 
               onClick={() => setShowProfileModal(true)}
               style={{

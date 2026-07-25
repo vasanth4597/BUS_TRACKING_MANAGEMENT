@@ -176,7 +176,6 @@ export default function TrackLocationView({ bus, buses = [], onClose }) {
             </div>
           </div>
 
-          {/* Status badge */}
           <span
             className="track-status-badge"
             style={{
@@ -188,7 +187,6 @@ export default function TrackLocationView({ bus, buses = [], onClose }) {
             {(bus.status || 'Unknown').toUpperCase()}
           </span>
 
-          {/* Close X */}
           <button className="track-close-btn" onClick={onClose} title="Close">
             <X size={20} strokeWidth={2.5} />
           </button>
@@ -197,7 +195,6 @@ export default function TrackLocationView({ bus, buses = [], onClose }) {
         {/* ── Map + side info layout ── */}
         <div className="track-body">
 
-          {/* Leaflet map */}
           <div className="track-map-area">
             <MapContainer
               center={[lat, lng]}
@@ -219,7 +216,6 @@ export default function TrackLocationView({ bus, buses = [], onClose }) {
           {/* ── Side info panel ── */}
           <div className="track-info-panel">
 
-            {/* Bus avatar + number */}
             <div className="track-info__hero">
               <div
                 className="track-info__avatar"
@@ -233,7 +229,6 @@ export default function TrackLocationView({ bus, buses = [], onClose }) {
               </div>
             </div>
 
-            {/* Info rows */}
             <div className="track-info__rows">
               {[
                 { label: 'Bus ID', value: busIdDisplay },
@@ -251,7 +246,6 @@ export default function TrackLocationView({ bus, buses = [], onClose }) {
               ))}
             </div>
 
-            {/* Coordinates */}
             <div className="track-info__coords">
               <div className="track-info__coords-header">
                 <Navigation size={11} strokeWidth={2} />

@@ -48,7 +48,6 @@ const BusesPage = ({ buses, setBuses }) => {
 
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column', overflow: 'hidden', padding: '24px', backgroundColor: '#f9fafb' }}>
-      {/* Search Bar and Add Button Container */}
       <div className="flex justify-between items-center mb-6 gap-4">
         <div className="relative flex-1 max-w-md">
           <Search className="absolute left-3 top-2.5 text-gray-400" size={18} />
@@ -128,7 +127,6 @@ const BusesPage = ({ buses, setBuses }) => {
         </div>
       </div>
 
-      {/* Modal with explicit Labels */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 z-50">
           <div className="bg-white p-6 rounded-lg w-full max-w-lg relative shadow-xl">
@@ -204,7 +202,6 @@ const BusesPage = ({ buses, setBuses }) => {
             }}
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close ✕ */}
             <button
               onClick={handleDeleteCancel}
               style={{
@@ -220,7 +217,6 @@ const BusesPage = ({ buses, setBuses }) => {
               <X size={14} />
             </button>
 
-            {/* Red icon badge */}
             <div style={{
               width: '60px', height: '60px', borderRadius: '50%',
               background: '#fff5f5', border: '2px solid #fed7d7',
@@ -230,17 +226,14 @@ const BusesPage = ({ buses, setBuses }) => {
               <Trash2 size={28} color="#ef4444" strokeWidth={2} />
             </div>
 
-            {/* Title */}
             <h2 id="delete-bus-title" style={{ margin: '0 0 10px', fontSize: '20px', fontWeight: 700, color: '#1a202c', letterSpacing: '-0.01em' }}>
               Delete Bus
             </h2>
 
-            {/* Message */}
             <p style={{ margin: '0 0 24px', fontSize: '14px', color: '#718096', lineHeight: 1.6, maxWidth: '280px' }}>
               Are you sure to delete <strong style={{ color: '#1a202c' }}>Bus {busToDelete.busNo}</strong> ({busToDelete.route})? This action cannot be undone.
             </p>
 
-            {/* Buttons */}
             <div style={{ display: 'flex', gap: '12px', width: '100%' }}>
               <button
                 ref={cancelDeleteRef}

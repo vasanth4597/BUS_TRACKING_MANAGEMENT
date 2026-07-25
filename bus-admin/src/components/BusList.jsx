@@ -8,7 +8,6 @@ import BusRow from './BusRow';
 export default function BusList({ buses = [], selectedId, onSelect }) {
   return (
     <div className="bus-list-card">
-      {/* Card header */}
       <div className="bus-list-card__header">
         <div className="bus-list-card__title">
           <div className="bus-list-card__title-icon">
@@ -19,13 +18,11 @@ export default function BusList({ buses = [], selectedId, onSelect }) {
         <span className="bus-list-card__count">{buses.length} BUSES</span>
       </div>
 
-      {/* Column labels */}
       <div className="bus-list__cols">
         <span>Bus ID &amp; Route</span>
         <span>Status</span>
       </div>
 
-      {/* Scrollable list */}
       <div className="bus-list__body">
         {buses.length > 0 ? (
           buses.map((bus) => (

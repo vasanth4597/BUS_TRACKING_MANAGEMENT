@@ -35,21 +35,16 @@ export default function LogoutModal({ isOpen, onCancel, onConfirm }) {
         className="logout-modal"
         onClick={(e) => e.stopPropagation()}
       >
-
-        {/* Red icon badge */}
         <div className="logout-modal__icon-wrap">
           <LogOut size={28} color="#ef4444" strokeWidth={2} />
         </div>
 
-        {/* Title */}
         <h2 className="logout-modal__title" id="logout-title">Logout</h2>
 
-        {/* Message */}
         <p className="logout-modal__message">
           Are you sure you want to logout from your account?
         </p>
 
-        {/* Action buttons */}
         <div className="logout-modal__actions">
           <button
             ref={cancelBtnRef}

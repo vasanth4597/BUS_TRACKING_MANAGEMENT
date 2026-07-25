@@ -43,13 +43,11 @@ export default function Profile({ isOpen, onClose, email = "admin@example.com" }
         }}
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
         <div style={{
           display: 'flex',
           alignItems: 'center',
           gap: '12px',
         }}>
-          {/* Circular back arrow button */}
           <button
             onClick={onClose}
             style={{
@@ -73,7 +71,6 @@ export default function Profile({ isOpen, onClose, email = "admin@example.com" }
             <ArrowLeft size={16} strokeWidth={2.5} />
           </button>
 
-          {/* Title */}
           <h2 style={{
             color: '#ffffff',
             fontSize: '18px',
@@ -85,7 +82,6 @@ export default function Profile({ isOpen, onClose, email = "admin@example.com" }
           </h2>
         </div>
 
-        {/* White inner card */}
         <div style={{
           backgroundColor: '#ffffff',
           borderRadius: '12px',
@@ -97,7 +93,6 @@ export default function Profile({ isOpen, onClose, email = "admin@example.com" }
           boxSizing: 'border-box',
           overflow: 'hidden',
         }}>
-          {/* Grey circular avatar with dark border */}
           <div style={{
             width: '44px',
             height: '44px',
@@ -112,7 +107,6 @@ export default function Profile({ isOpen, onClose, email = "admin@example.com" }
             <User size={26} color="#000000" fill="#000000" />
           </div>
 
-          {/* Clickable email link */}
           <a
             href={`mailto:${email}`}
             style={{
