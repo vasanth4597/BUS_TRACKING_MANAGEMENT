@@ -1,8 +1,4 @@
-/* ─────────────────────────────────────────────────────────
-   BusInfoCard — "Bus Details" card below the Bus List
-   Shows: Bus ID · Bus Number · Route · Driver Name ·
-          Driver Contact · License Number · Capacity
-───────────────────────────────────────────────────────── */
+/*bus info like bus id , bus no., route, drivername, number, license*/
 import { Bus, MapPin } from 'lucide-react';
 
 function InfoRow({ label, value }) {
